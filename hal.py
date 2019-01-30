@@ -28,7 +28,7 @@ class Bot:
     _orientation = None
 
     def __init__(self, config):
-        print("Initializing Bot...")
+        print("Initializing Hardware Abstraction Layer...")
         gpio.setmode(gpio.BOARD)
         self._config.update(config)
         # controls:
@@ -180,17 +180,17 @@ if __name__ == "__main__":
     dname = os.path.dirname(abspath)
     os.chdir(dname)
 
-    # Control bot:
+    # Control hal:
     f = open('config.json')
     settings = json.load(f)
     f.close()
-    bot = Bot(settings)
+    hal = Hal(settings)
     if sys.argv[1] == '--network':
-        bot.network_control()
+        hal.network_control()
     elif sys.argv[1] == '--manual':
-        bot.manual_control()
+        hal.manual_control()
     elif sys.argv[1] == '--test':
         print("todo")
     else:
         print("unknown arguement")
-    del(bot)
+    del(hal)
