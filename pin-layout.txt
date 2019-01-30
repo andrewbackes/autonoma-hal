@@ -1,0 +1,56 @@
+The GPIO pins are used by:
+
+02 - power rail +
+03 - accel sda
+05 - accel scl
+06 - power rail -
+
+07 - motor driver IN4
+11 - motor driver IN3
+13 - motor driver IN2
+15 - motor driver IN1
+
+12 - ultrasonic trigger
+16 - ultrasonic echo
+
+18 - ultrasonic echo
+22 - ultrasonic trigger
+
+32 - IR detector
+
+36 - IR detector
+
+38 - Left motor PWM
+40 - Right motor PWM
+
+
+
+37 - servo orange
+   - servo red -   chip +
+   - servo brown - chip ground
+
+01 - chip 02
+25 - chip -
+04 - chip +
+
+chip
+------
+02 - pi 01
+05 - sharp white
+   - sharp red -   chip +
+   - sharp black - chip ground
+08 - pi 23
+10 - pi 21
+12 - pi 19
+14 - pi 24
+
+
+Sharp IR 10cm-80cm
+------------------
+3.1V = 10cm --> 961
+0.4V = 80cm --> 124
+
+3.1/3.3V = x/1023 => x = 961
+0.4/3.3V = x/1023 => x = 124
+
+y = (70/837)*x
