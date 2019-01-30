@@ -1,0 +1,36 @@
+{
+    "hbridge": {
+        "enabled": true,
+        "gpio": {
+            "pwm_left": 38,
+            "pwm_right": 40,
+            "driver_in1": 15,
+            "driver_in2": 13,
+            "driver_in3": 11,
+            "driver_in4": 7
+        }
+    },
+    "roofmount": {
+        "enabled": true,
+        "servo": {
+            "enabled": true,
+            "level_degrees": 35,
+            "max_degrees": 70,
+            "min_degrees": -48
+        },
+        "stepper": {
+            "enabled": true,
+            "gpio": {
+                "step": 36,
+                "dir": 32
+            }
+        },
+        "lidar": {
+            "enabled": true,
+            "updateRatePerSecond": 270
+        }
+    },
+    "orientation": {
+        "enabled": true
+    }
+}
