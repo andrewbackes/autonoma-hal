@@ -17,7 +17,7 @@ import os
 import time
 
 
-class Bot:
+class Hal:
     _config = {
         "hbridge": {"enabled": False},
         "roofmount": {"enabled": False},
