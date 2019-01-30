@@ -6,6 +6,8 @@ This project is designed to provide abstraction over the bot's hardware. The har
 It is written to run on a Raspberry Pi running Raspian. Sensors/motors are controlled via GPIO, I2C, SPI, etc.
 
 ## Usage
+Make sure `pigpiod` is running.
+
 This is a python3 project. It has two running modes, which can be controlled via command line flags: `--manual` and `--network`. When in manual mode the bot can be controlled with keyboard input. When in network mode it will await a TCP connection. It expects JSON commands to tell it what to do.
 
 ## Supported Hardware
